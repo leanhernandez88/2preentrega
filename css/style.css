@@ -1,7 +1,3 @@
-body{
-    overflow-x: hidden;
-}
-
 @font-face {
     font-family:raleway;
     src: url(fuentes/quicksand/Quicksand-LightItalic.otf);
@@ -17,14 +13,20 @@ body{
 
 }
 
+body{
+    overflow-x: hidden;
+}
 
 
 header{
     width: 100vh;
 }
-
+.BotonInicio{
+    background-color: #F9E322;
+    border: #fff;
+}
 .volveralinicio{
-    color: #fff;
+    color:black;
     text-decoration: none;
 }
 
@@ -67,8 +69,9 @@ body{
    } 
 
 
-.barra{
+.Style__nav{
     display: flex;
+    flex-direction: row;
     width: fit-content;
     margin-left: 2%;
     margin-right: 2%;
@@ -79,6 +82,7 @@ body{
 
 .nav-enlace {
     display: flex;
+    flex-direction: row;
     background-color:#F9E322;
     font-family: Impact, sans-serif;
     font-size: medium;
@@ -311,13 +315,15 @@ form {
        justify-items: baseline;
        width: 150% !important;
    }
-   .barra{
-       display: inline-block;
-       width: 100%;
+   .Style__nav{
+       display: flex;
+       flex-direction: row;
+       width: 80%;
        margin-left: 2%;
        margin-right: 2%;
        margin-top: 3%;
        padding-left: 50%;
+      
    
    }
    
