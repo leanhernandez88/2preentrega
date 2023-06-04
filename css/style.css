@@ -107,11 +107,11 @@ body{
 }
 
 
-.body{
+/* .body{
     position: relative;
     padding-bottom: 3em;
    
-}
+}*/
 .fotoInicio img {
     width: 98%;
     height: auto;
@@ -229,7 +229,7 @@ body{
 
 .cirquiatrico:hover{
     cursor: crosshair;
-    width: 300px;
+    width: 80%;
     opacity: 1;
     filter: contrast(120%);
 }
@@ -308,6 +308,11 @@ form {
 
 
 @media ( min-width: 768px ){
+    body{
+        background-color: black;
+        width:100%;
+    }
+
     .ACROBACIA{
        font: size 24px;;
        margin-left: auto;
@@ -323,8 +328,7 @@ form {
    
    }
    .LOGO{
-       padding: 2%;
-       padding-left: 25%;
+       padding: 0%;
        display:flex;
        align-items: center;
        align-self: center;
@@ -336,25 +340,28 @@ form {
        display: flex;
        flex-direction: row;
        width: 80%;
-       margin-left: 2%;
+       margin-left: 20%;
        margin-right: 2%;
        margin-top: 3%;
-       padding-left: 20%;
+       align-items: center;
       
    
    }
    
    .nav-enlace {
-       display: inline-block;
+       display: flex;
+       flex-direction: row;
        background-color:#F9E322;
        font-family: Impact, sans-serif;
        text-decoration: none;
        font-size: medium;
        content: none;
-       padding: 8px 16px ;
+       padding: 2% ;
        border: 5px;
        margin: 1% 2%;
        list-style: none;
+       align-content: center;
+       justify-content: center;
    }
 
    .fotoInicio img {
