@@ -140,12 +140,6 @@ body{
     text-shadow: 1px 2px 2px beige;
     display: flex;
     flex-direction: column;
-    transition-property:font-size ;
-    transition-duration: 3s;
-    
-}
-.parrafo:hover{
- font-size: 26px;
 }
 
 .conteiner__biografia--padre{
@@ -335,7 +329,7 @@ form {
        display: flex;
        flex-direction: row;
        width: 80%;
-       margin-left: 30%;
+       margin-left: 20%;
        margin-right: 2%;
        margin-top: 3%;
        align-items: center;
@@ -388,9 +382,15 @@ form {
     flex-wrap: wrap;
     flex-direction: column;
     width: 80%;
+    transition-property:font-size ;
+    transition-duration: 3s;
+    }
 
     
+    
 
+.parrafo:hover{
+ font-size: 26px;
 }
 
    .conteiner__biografia--padre{
