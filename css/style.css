@@ -87,7 +87,7 @@ body{
     display: flex;
     flex-direction: row;
     background-color:#F9E322;
-    box-shadow: 0 0 5px gray, 0 0 10px gray;
+    box-shadow: 0 0 5px gray, 0 0 10px gray ;
     font-family: Impact, sans-serif;
     font-size:small;
     padding: 0.5% ;
