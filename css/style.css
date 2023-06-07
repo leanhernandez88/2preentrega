@@ -87,10 +87,10 @@ body{
     display: flex;
     flex-direction: row;
     background-color:#F9E322;
+    box-shadow: 0 0 5px gray, 0 0 10px gray;
     font-family: Impact, sans-serif;
     font-size:small;
-    content:none;
-    padding: 1%  ;
+    padding: 0.5% ;
     border: 5px;
     margin: 1% ;
     list-style: none;
@@ -102,7 +102,8 @@ body{
 
 .nav-enlace:hover {
     background:#410CFD;
-    font-family: Impact, sans-serif
+    font-family: Impact, sans-serif;
+    transform: translate(20px, 20px);
     
 }
 
@@ -139,10 +140,12 @@ body{
     text-shadow: 1px 2px 2px beige;
     display: flex;
     flex-direction: column;
+    transition-property:font-size ;
+    transition-duration: 3s;
     
-    
-    
-
+}
+.parrafo:hover{
+ font-size: 26px;
 }
 
 .conteiner__biografia--padre{
@@ -161,6 +164,7 @@ body{
     width: 300px;
     height: 450px;
     margin-left: 2%;
+    
    
 }
 
@@ -210,7 +214,7 @@ body{
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 8%;
-   aspect-ratio: 1/2;
+    aspect-ratio: 1/2;
     
 }
 
@@ -233,7 +237,8 @@ body{
 form {
     background-color: black;
     color: #999;
-    display:inline-block;
+    display:flex;
+    flex-direction: column;
     margin: 10px;
     width: 250px;
     padding: 10px;
@@ -275,12 +280,17 @@ form {
     margin: 1%;
       
 }
+.Entrenamiento:hover{
+   transform: scale(1.1);
+
+}
 
  h3{
    font-family: Impact,  sans-serif;
    color: white;
    margin:2%;
-   margin-bottom: 4%;
+   margin-bottom: 20%;
+   margin-top: 10%;
    text-align: center;
    display: flex;
    align-items:center;
@@ -325,7 +335,7 @@ form {
        display: flex;
        flex-direction: row;
        width: 80%;
-       margin-left: 20%;
+       margin-left: 30%;
        margin-right: 2%;
        margin-top: 3%;
        align-items: center;
@@ -338,12 +348,13 @@ form {
        flex-direction: row;
        background-color:#F9E322;
        font-family: Impact, sans-serif;
-       text-decoration: none;
+       box-shadow: 0 0 5px grey, 0 0 10px grey;
        font-size: medium;
-       content: none;
-       padding: 2% ;
+       padding: 1.5% ;
+       padding-top: 0.5%;
+       padding-bottom: 0.5%;
        border: 5px;
-       margin: 1% 2%;
+       margin: 0.5%;
        list-style: none;
        align-content: center;
        justify-content: center;
@@ -440,6 +451,12 @@ form {
     margin: 1%;
    
    }
+
+   h3{
+     margin-left: 7%;
+    
+   }
+
    .galeria1 {
     color: #fff;
     padding-left: 250px;
