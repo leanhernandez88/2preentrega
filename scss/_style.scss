@@ -35,13 +35,16 @@ body{
         opacity: .8;
         transition: .5s ease;
     }
+    &__cirquiatrico:hover{
+        cursor: crosshair;
+        width: 80%;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    
 }
-.cirquiatrico:hover{
-    cursor: crosshair;
-    width: 80%;
-    opacity: 1;
-    filter: contrast(120%);
-}
+
+
 
 .fotoInicio img {
     width: 98%;
