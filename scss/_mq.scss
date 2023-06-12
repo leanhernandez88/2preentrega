@@ -1,0 +1,198 @@
+@media ( min-width: 768px ){
+    body{
+        background-color: $background;
+        width:100%;
+    }
+
+    .ACROBACIA{
+       font: size 24px;;
+       margin-left: auto;
+       padding-left: 15%;
+   }
+   .LEAN{
+       font-size: 18px;
+       padding-left: 15%;
+   }
+   h1{
+       font-size: 32px;
+       padding-left: 10%;
+   
+   }
+   .LOGO{
+       padding: 0%;
+       display:flex;
+       align-items: center;
+       align-self: center;
+       align-content: center;
+       justify-items: baseline;
+       width: 90% !important;
+   }
+   .Style__nav{
+       display: flex;
+       flex-direction: row;
+       width: 80%;
+       margin-left: 20%;
+       margin-right: 2%;
+       margin-top: 3%;
+       align-items: center;
+      
+   
+   }
+   
+   .nav-enlace {
+       display: flex;
+       flex-direction: row;
+       background-color:$amarillo;
+       font-family: Impact, sans-serif;
+       box-shadow: 0 0 5px grey, 0 0 10px grey;
+       font-size: medium;
+       padding: 1.5% ;
+       padding-top: 0.5%;
+       padding-bottom: 0.5%;
+       border: 5px;
+       margin: 0.5%;
+       list-style: none;
+       align-content: center;
+       justify-content: center;
+   }
+
+   .fotoInicio img {
+    width: 95%;
+    height: auto;
+    position: static;
+    padding: 2%;
+    display: flex;
+    padding-left: 2%;
+    flex-direction:column;
+    
+
+}
+
+
+
+.parrafo {
+    color: #fff;
+    font-family:Impact, sans-serif;
+    padding: 2%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    margin: 1%;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 1px 2px 2px beige;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+    transition-property:font-size ;
+    transition-duration: 3s;
+    }
+
+    
+    
+
+.parrafo:hover{
+ font-size: 26px;
+}
+
+   .conteiner__biografia--padre{
+       display: grid ;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr;
+       grid-template-areas: 
+       "foto texto";
+       justify-items: center;
+       align-items: center;
+       
+   }
+   
+   .img__biografia{
+       display:flex;
+       grid-area: foto;
+       width: 500px;
+       height: 700px;
+       padding-left: 1%;
+       padding: 5%;
+       overflow: hidden;
+       
+       
+       
+   
+   
+       
+   }
+   
+   .descripcion__biografia{
+       display: flex;
+       grid-area: texto;
+       font-size: 32px;
+       font-family: Impact, sans-serif;
+       color:#fff;
+       width: 90%;
+       padding: 1%;
+       
+   }
+   
+.clases{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+.clases img{
+    width: 90%;
+    justify-content: space-between;
+}
+
+.Entrenamiento{
+    width: 90%;
+    height: auto;
+    padding: 2%;
+    padding-left: 5%;
+    display: flex;
+    margin: 1%;
+   
+   }
+
+   h3{
+     margin-left: 7%;
+    
+   }
+
+   .galeria1 {
+    color: #fff;
+    padding-left: 250px;
+    text-shadow: 0px 0px 5px $cian, 0px 0px 15px $cian,0px 0px 30px $cian;
+    padding: 2%;
+    padding-left: 25%;
+    margin-bottom: -40px;
+    font-size: 18px;
+}
+
+.galery{
+    width:  50%;
+    height: 500px;
+    display: flex;
+    align-content: center;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-bottom: 5%;
+   aspect-ratio: 1/2;
+    
+}
+
+.cirquiatrico {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.cirquiatrico:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+}
