@@ -1,3 +1,4 @@
+
 .BotonInicio{
     background-color: $amarillo;
     border: #fff;
@@ -12,11 +13,11 @@
 
 
 .LOGO {
-    padding: 0% !important;
-    margin: 0% !important;
+    padding: 0% ;
+    margin: 0% ;
     padding-bottom: -5%;
     display: flex;
-    width:100% !important;
+    width:100% ;
     overflow: hidden;
 
 }
@@ -58,11 +59,17 @@
    } 
 
    @keyframes move{
-    0%{
-        translate: 100%;
+   
+    0% {
+        top: -100px; 
+        opacity: 0; 
+      }
+      100% {
+        top: 0; 
+        opacity: 1;
+      }
     }
-   }
-
+   
 
 .Style__nav{
     display: flex;

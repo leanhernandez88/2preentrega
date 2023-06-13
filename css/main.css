@@ -6,6 +6,11 @@
   font-family: raleway;
   src: url(fuentes/raleway/Raleway-SemiBoldItalic.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .BotonInicio {
   background-color: #F9E322;
   border: #fff;
@@ -18,11 +23,11 @@
 }
 
 .LOGO {
-  padding: 0% !important;
-  margin: 0% !important;
+  padding: 0%;
+  margin: 0%;
   padding-bottom: -5%;
   display: flex;
-  width: 100% !important;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -59,7 +64,12 @@ h1 {
 
 @keyframes move {
   0% {
-    translate: 100%;
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }
 .Style__nav {
@@ -95,11 +105,6 @@ h1 {
   background: #410CFD;
   font-family: Impact, sans-serif;
   transform: translate(5px, 5px);
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -277,6 +282,7 @@ h3 {
     font: size 24px;
     margin-left: auto;
     padding-left: 15%;
+    margin-top: -3%;
   }
   .LEAN {
     font-size: 18px;
@@ -293,7 +299,8 @@ h3 {
     align-self: center;
     align-content: center;
     justify-items: baseline;
-    width: 90% !important;
+    width: 80% !important;
+    margin-top: -3%;
   }
   .Style__nav {
     display: flex;
@@ -301,7 +308,7 @@ h3 {
     width: 80%;
     margin-left: 20%;
     margin-right: 2%;
-    margin-top: 3%;
+    margin-top: 1%;
     align-items: center;
   }
   .nav-enlace {

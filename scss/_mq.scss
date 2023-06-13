@@ -8,6 +8,7 @@
        font: size 24px;;
        margin-left: auto;
        padding-left: 15%;
+       margin-top: -3%;
    }
    .LEAN{
        font-size: 18px;
@@ -25,7 +26,8 @@
        align-self: center;
        align-content: center;
        justify-items: baseline;
-       width: 90% !important;
+       width: 80% !important;
+       margin-top: -3%;
    }
    .Style__nav{
        display: flex;
@@ -33,7 +35,7 @@
        width: 80%;
        margin-left: 20%;
        margin-right: 2%;
-       margin-top: 3%;
+       margin-top: 1%;
        align-items: center;
       
    
@@ -89,10 +91,8 @@
     }
 
     
-    
-
-.parrafo:hover{
- font-size: 26px;
+    .parrafo:hover{
+        font-size: 26px;
 }
 
    .conteiner__biografia--padre{
