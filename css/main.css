@@ -6,6 +6,11 @@
   font-family: raleway;
   src: url(fuentes/raleway/Raleway-SemiBoldItalic.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .BotonInicio {
   background-color: #F9E322;
   border: #fff;
@@ -18,11 +23,11 @@
 }
 
 .LOGO {
-  padding: 0% !important;
-  margin: 0% !important;
+  padding: 0%;
+  margin: 0%;
   padding-bottom: -5%;
   display: flex;
-  width: 100% !important;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -48,7 +53,7 @@ h1 {
   padding-left: 5%;
   margin-top: 30px;
   margin-bottom: 30px;
-  text-shadow: 0 0 5px #F9E322, 0 0 15px #F9E322, 0 0 30px #f9e322;
+  text-shadow: 0 0 5px #F9E322, 0 0 15px #F9E322, 0 0 30px #F9E322;
   animation-name: move;
   animation-duration: 4s;
   animation-delay: 1s;
@@ -59,7 +64,12 @@ h1 {
 
 @keyframes move {
   0% {
-    translate: 100%;
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
   }
 }
 .Style__nav {
@@ -94,12 +104,7 @@ h1 {
 .nav-enlace:hover {
   background: #410CFD;
   font-family: Impact, sans-serif;
-  transform: translate(20px, 20px);
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  transform: translate(5px, 5px);
 }
 
 body {
@@ -134,7 +139,139 @@ body {
   opacity: 0.8;
   transition: 0.5s ease;
 }
+.galery__cirquiatrico:hover {
+  cursor: crosshair;
+  width: 80%;
+  opacity: 1;
+  filter: contrast(120%);
+}
 
+.fotoInicio img {
+  width: 98%;
+  height: auto;
+  position: static;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__parrafo--inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo {
+  color: #fff;
+  font-family: Impact, sans-serif;
+  padding: 1%;
+  margin: 1%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 1px 2px 2px beige;
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__biografia--padre {
+  display: grid;
+  margin-left: 1%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foto" "texto";
+}
+
+.img__biografia {
+  display: flex;
+  grid-area: foto;
+  width: 300px;
+  height: 450px;
+  margin-left: 4%;
+}
+
+.descripcion__biografia {
+  display: flex;
+  grid-area: texto;
+  font-size: 22px;
+  font-family: Impact, sans-serif;
+  color: #fff;
+  align-items: center;
+  justify-self: center;
+  width: 80%;
+  margin-left: 1%;
+}
+
+.footer {
+  color: ghostwhite;
+  text-align: center;
+  justify-content: center;
+  background-color: #FF00FF;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+  max-width: 100% !important;
+}
+
+form {
+  background-color: black;
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 250px;
+  padding: 10px;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  border-radius: 3px;
+  font-family: Impact, sans-serif;
+}
+
+.input {
+  border: solid 1px #999;
+  padding: 5px;
+  margin: 3px 1px 3px 1px;
+}
+
+.textoFormulario {
+  color: white;
+}
+
+.clases {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.clases img {
+  width: 100%;
+}
+
+.Entrenamiento {
+  width: 50%;
+  height: auto;
+  padding: 2%;
+  padding-left: 2%;
+  display: flex;
+  margin: 1%;
+}
+
+.Entrenamiento:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  font-family: Impact, sans-serif;
+  color: white;
+  margin: 2%;
+  margin-bottom: 20%;
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
 
 @media (min-width: 768px) {
   body {
@@ -145,6 +282,7 @@ body {
     font: size 24px;
     margin-left: auto;
     padding-left: 15%;
+    margin-top: -3%;
   }
   .LEAN {
     font-size: 18px;
@@ -161,7 +299,8 @@ body {
     align-self: center;
     align-content: center;
     justify-items: baseline;
-    width: 90% !important;
+    width: 80% !important;
+    margin-top: -3%;
   }
   .Style__nav {
     display: flex;
@@ -169,7 +308,7 @@ body {
     width: 80%;
     margin-left: 20%;
     margin-right: 2%;
-    margin-top: 3%;
+    margin-top: 1%;
     align-items: center;
   }
   .nav-enlace {
