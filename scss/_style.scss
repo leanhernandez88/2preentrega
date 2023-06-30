@@ -63,7 +63,8 @@ body{
 
 .parrafo {
     color: #fff;
-    font-family:Impact, sans-serif;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
     padding: 1%;
     margin: 1%;
     margin-top: 10%;
@@ -85,25 +86,46 @@ body{
     "texto";
 
    }
-   .img__biografia{
+   
+   .img__biografia {
     display: flex;
+    flex-direction: column;
     grid-area: foto;
-    width: 300px;
-    height: 450px;
-    margin-left: 4%;
+   }
+
+   .img__biografia img{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
 }
 
-.descripcion__biografia{
+h4{
+    color: #fff;
     display: flex;
-    grid-area: texto;
-    font-size: 22px;
-    font-family: Impact, sans-serif;
-    color:#fff;
-    align-items: center;
-    justify-self: center;
-    width: 80%;
-    margin-left: 1%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    flex-direction: column;
+    align-self: center;
+    justify-self: self-start;
 }
+
+.descripcion__biografia p{
+    display: flex; 
+    grid-area: texto;
+    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    font-weight:bold;
+    color:#fff;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 
 .footer{
     color: ghostwhite;
@@ -114,7 +136,18 @@ body{
     width: 100% ;
     box-shadow: 0 0 5px$magenta, 0 0 10px $magenta, 0 0 20px $magenta;
     max-width: 100% !important;
+    display: flex;
     
+    
+}
+
+.img_footer{
+    width: 2%;
+    display:flex;
+    flex-direction: row;
+    align-content: space-between    
+    
+
     
 }
 
@@ -131,7 +164,7 @@ form {
     padding: 2%;
     padding-bottom: 5%;
     border-radius: 3px;
-    font-family: Impact,  sans-serif;
+    font-family: 'Roboto', sans-serif;
     align-self: center;
   
  }
@@ -162,6 +195,7 @@ form {
 }
 
 
+
 .clases{
     display: flex;
     width: 100%;
@@ -176,9 +210,9 @@ form {
     width: 50%;
     height: auto;
     padding: 2%;
-    padding-left: 2%;
     display: flex;
     margin: 1%;
+    align-self: center;
       
 }
 .Entrenamiento:hover{
@@ -187,18 +221,44 @@ form {
 }
 
  h3{
-   font-family: Impact,  sans-serif;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
    color: white;
    margin:2%;
    margin-bottom: 20%;
    margin-top: 10%;
    text-align: center;
    display: flex;
-   align-items:center;
+   align-self:center;
    justify-items:center;
+   animation-name: color;
+   animation-duration: 10s;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-fill-mode: backwards;
+
+  } 
+
+  @keyframes color{
+  
+   0% {
+       color: #fff;
+       
+     }
+   25%{
+       color: $cian;
+   }
+   50%{
+       color: $magenta;
+   }  
+   100% {
+       color:$amarillo;
+       
+     }
+   }
 
 
-}
 
 
 

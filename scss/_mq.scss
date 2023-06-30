@@ -73,7 +73,7 @@
 
 .parrafo {
     color: #fff;
-    font-family:Impact, sans-serif;
+    font-family:'Roboto', sans-serif;
     padding: 2%;
     padding-bottom: 3%;
     padding-left: 5%;
@@ -107,28 +107,43 @@
    
    .img__biografia{
        display:flex;
+       flex-direction: column;
        grid-area: foto;
-       width: 500px;
-       height: 700px;
-       padding-left: 1%;
-       padding: 5%;
-       overflow: hidden;
+
        
-       
-       
+      
+    }
    
-   
-       
-   }
-   
-   .descripcion__biografia{
-       display: flex;
+    .img__biografia img {
+        width: 70%;
+        height: auto;
+        padding-left: 1%;
+        padding: 5%;
+        align-self: center;
+    }
+
+    h4{
+        color: #fff;
+        display: flex;
+        margin-bottom: 5%;
+        flex-direction: column;
+        align-self: center;
+        justify-self: self-start;
+    }
+    .descripcion__biografia{
+        display: flex;
        grid-area: texto;
-       font-size: 32px;
-       font-family: Impact, sans-serif;
+
+    }
+   .descripcion__biografia p{
+       
+       font-size: 25px;
+       font-family: 'Roboto', sans-serif;
        color:#fff;
-       width: 90%;
+       width: 80%;
        padding: 1%;
+       align-self: center;
+       justify-items: center;
        
    }
    
