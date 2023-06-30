@@ -148,6 +148,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }
 
 .parrafo {
@@ -222,13 +223,6 @@ h4 {
   box-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 20px #FF00FF;
   max-width: 100% !important;
   display: flex;
-}
-
-.img_footer {
-  width: 2%;
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
 }
 
 form {
@@ -393,7 +387,7 @@ h3 {
     font-family: "Roboto", sans-serif;
     padding: 2%;
     padding-bottom: 3%;
-    padding-left: 5%;
+    padding-left: 2%;
     margin: 1%;
     font-size: 32px;
     text-align: center;
